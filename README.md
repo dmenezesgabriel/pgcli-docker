@@ -16,12 +16,13 @@ Pgcli uses psycopg to talk to postgreSQL database. In order to install `psycopg2
 
 ## Usage
 
-1. Create a `.env` based on `.env.template` replacing the desired variables
+1. Create a `.env.db_name` based on `.env.template` replacing the desired variables
 2. Build the image:
    ```sh
    make build
    ```
 3. Run the container:
    ```sh
+   export DB=db_name
    make run
    ```
